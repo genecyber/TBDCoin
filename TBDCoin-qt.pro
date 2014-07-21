@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = energycoin-qt
+TARGET = tbdcoin-qt
 VERSION = 1.1.3
 INCLUDEPATH += src src/json src/qt
 QT += network
@@ -11,14 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4) {
  }
  
 # UNCOMMENT THIS SECTION TO BUILD ON WINDOWS
-# Change paths if needed, these use the Energycoin/ repository locations
+# Change paths if needed, these use the TBDCoin/ repository locations
 
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
 # For Windows, specify path and options from command line:
-#   qmake energycoin-qt.pro RELEASE=1 USE_UPNP=1 -config release QMAKE_LFLAGS+="-static-libgcc -static-libstdc++" BOOST_INCLUDE_PATH=C:/MinGW/msys/1.0/local/include BOOST_LIB_PATH=C:/MinGW/msys/1.0/local/lib BOOST_LIB_SUFFIX=-mgw46-mt-s-1_54
+#   qmake tbdcoin-qt.pro RELEASE=1 USE_UPNP=1 -config release QMAKE_LFLAGS+="-static-libgcc -static-libstdc++" BOOST_INCLUDE_PATH=C:/MinGW/msys/1.0/local/include BOOST_LIB_PATH=C:/MinGW/msys/1.0/local/lib BOOST_LIB_SUFFIX=-mgw46-mt-s-1_54
 #BOOST_LIB_SUFFIX=-mgw48-mt-s-1_50 
 #BOOST_INCLUDE_PATH=C:/boost-1.50.0-mgw
 #BOOST_LIB_PATH=C:/boost-1.50.0-mgw/stage/lib
@@ -301,7 +301,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = energycoin-qt_test
+TARGET = tbdcoin-qt_test
 DEFINES += BENRGOIN_QT_TEST
 }
 
@@ -382,7 +382,7 @@ macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/energycoin.icns
-macx:TARGET = "EnergyCoin-Qt"
+macx:TARGET = "TBDCoin-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread
